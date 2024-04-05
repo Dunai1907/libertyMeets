@@ -1,0 +1,41 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #FFFAE6;
+    flex-direction: column;
+    gap:30px;
+}
+
+.message{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #10020a;
+    width: 40%;
+    text-align: center;
+    text-transform: uppercase;
+    
+    @media (max-width:1000px) {
+        width: 80%;
+    }
+}
+
+.codeMessage{
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #921A64;
+    width: 50%;
+    text-align: center;
+    width: min-content;
+    border-bottom:1px solid #921A64;
+    margin: 0;
+}

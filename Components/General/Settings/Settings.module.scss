@@ -1,0 +1,203 @@
+.container {
+  background-color: #fff;
+  width: 1112px;
+  box-shadow: 0px 1px 2px rgb(31 41 55 / 8%);
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (max-width: 1200px) {
+    width: auto;
+    margin: 0 20px;
+  }
+
+  @media (max-width: 600px) {
+    margin: 0 10px;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+
+  @media (max-width: 1200px) {
+    margin: 50px 0;
+  }
+}
+
+.password {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+  margin-bottom: 30px;
+
+  & div div {
+    min-width: 160px !important;
+  }
+
+  & div div label {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+  }
+}
+
+.input {
+  max-width: 965px;
+  display: flex;
+  border: 1px solid #8f8f8f;
+
+  &:active {
+    border-color: #921a64 !important;
+  }
+
+  &:hover {
+    border-color: #921a64 !important;
+  }
+}
+
+.userTitle {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #374151;
+  padding-bottom: 10px;
+}
+
+.save {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 198px;
+  height: 40px;
+  background: #921a64;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: none !important;
+
+  @media (max-width: 500px) {
+    width: auto;
+    justify-content: center;
+  }
+
+  &:hover {
+    background: #640674;
+  }
+}
+
+.buttonBlock {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+}
+
+.deleteBlock {
+  display: flex;
+  margin-top: 100px;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.btnDelete {
+  padding: 8px 16px;
+  display: flex;
+  gap: 15px;
+  gap: 10px;
+  width: 218px;
+  height: 40px;
+  background: #d9041e;
+  border-radius: 4px;
+  align-items: center;
+  border: none !important;
+
+  &:hover {
+    background: #960315;
+  }
+}
+
+.deleteText {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.containerMenu {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 700px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  width: 190px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background: #f9fafb;
+  border-radius: 4px;
+  border: none !important;
+  box-shadow: none;
+  color: #8f8f8f;
+
+  @media (max-width: 600px) {
+    width: auto;
+  }
+
+  &:hover {
+    background: #eee9f7;
+    color: #921a64 !important;
+  }
+}
+
+.profileWrapper {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  background: #f9fafb;
+  padding: 130px 0px 0px 0px;
+  min-height: 100vh;
+
+  @media (max-width: 800px) {
+    padding-top: 40px;
+  }
+}

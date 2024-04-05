@@ -1,0 +1,473 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.backButtonText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+
+  @media (max-width: 600px) {
+    display: none !important;
+  }
+}
+
+.backBlock {
+  height: 60px;
+
+  margin: 20px 0 0 50px;
+
+  @media (max-width: 1300px) {
+    margin: 10px 0 0 10px;
+  }
+}
+
+.backButton {
+  display: flex;
+  gap: 10px;
+  height: 52px;
+
+  @media (max-width: 1300px) {
+    max-width: auto;
+    margin: 0px 20px 40px 20px;
+  }
+
+  @media (max-width: 600px) {
+    gap: 15px;
+    padding: 5px 10px 55px 10px;
+    margin: 0px 10px 40px 10px;
+  }
+}
+
+.livePostContainer {
+  position: relative;
+
+  background-color: #fff;
+  margin: 120px auto 40px auto;
+  max-width: 1200px;
+  padding: 50px 30px 55px 30px;
+  gap: 30px;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+
+  @media (max-width: 1300px) {
+    max-width: auto;
+    margin: 0px auto 40px auto;
+  }
+
+  @media (max-width: 600px) {
+    gap: 15px;
+    padding: 20px 10px 55px 10px;
+    margin: 0px 10px 40px 10px;
+  }
+}
+
+.postHeader {
+  display: flex;
+  gap: 20px;
+
+  .left,
+  .right {
+    flex: 1;
+  }
+
+  @media (max-height: 1200px) {
+    flex-wrap: wrap;
+  }
+}
+
+.star {
+  & > div {
+    cursor: pointer;
+  }
+
+  margin-top: 10px;
+}
+
+.titleBlock {
+  width: 900px;
+
+  @media (max-width: 1200px) {
+    width: 500px;
+  }
+
+  @media (max-width: 600px) {
+    width: 400px;
+  }
+
+  @media (max-width: 400px) {
+    width: 250px;
+  }
+}
+
+.titleText {
+  font-family: "Butler";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  color: #000000;
+  word-wrap: break-word;
+  max-width: 90%;
+
+  @media (max-width: 600px) {
+    margin-top: 40px;
+    font-size: 36px;
+  }
+}
+
+.backImage {
+  @media (max-width: 600px) {
+    width: 35px;
+  }
+}
+
+.categoryButton {
+  padding: 8px 47px !important;
+  background: #921a64;
+  border-radius: 4px;
+  width: min-content;
+
+  @media (max-width: 600px) {
+    width: min-content;
+    height: min-content;
+    padding: 3px 20px;
+  }
+}
+
+.categoryButtonText {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  @media (max-width: 600px) {
+    font-size: 17px;
+  }
+}
+
+.category {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0d0d0c;
+}
+
+.descriptionBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.descriptionText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  width: 90%;
+  word-wrap: break-word;
+  text-align: justify;
+  margin-bottom: 0 !important;
+}
+
+.question {
+  @media (max-width: 600px) {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.location {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0d0d0c;
+}
+
+.cardBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.location {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0d0d0c;
+}
+
+.shareBtn {
+  border-color: #921a64 !important;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 120px;
+  height: 43px;
+
+  &:hover {
+    background: #eee9f7;
+  }
+}
+
+.public {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.0151px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #d9041e;
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.publicityImage {
+  cursor: pointer;
+}
+
+.publicActive {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.0151px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #921a64;
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.question {
+  @media (max-width: 600px) {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.location {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0d0d0c;
+}
+
+.postContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
+}
+
+.cardBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 300px;
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+
+  & > div {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.location {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0d0d0c;
+}
+
+.shareBtn {
+  border-color: #921a64 !important;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 120px;
+  height: 43px;
+
+  &:hover {
+    background: #eee9f7;
+  }
+}
+
+.shareBtnText {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #921a64;
+}
+
+.replyBtn {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 121px;
+  height: 43px;
+  background: #921a64;
+  border-radius: 4.00301px;
+  border: none !important;
+
+  &:hover {
+    background: #640674;
+  }
+}
+
+.replyBtnText {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.tick {
+  margin-bottom: 3px;
+}
+
+.buttonBlock {
+  display: flex;
+  gap: 30px;
+}
+
+.modal {
+  display: flex;
+}
+
+.modalTitle {
+  font-family: "Butler";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.copyBtn {
+  width: 121px;
+  height: 38px;
+  background: #921a64;
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adress {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 60px;
+}
+
+.emailItem {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.messageForm {
+  width: 100%;
+  padding-top: 20px;
+
+  & > button {
+    float: right;
+  }
+}
+
+.textboxArea {
+  margin: inset auto;
+}
+
+.modals {
+  & div div div div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+}

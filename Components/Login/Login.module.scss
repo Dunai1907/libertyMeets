@@ -1,0 +1,289 @@
+.logoImage {
+  width: 426px;
+  height: 75px;
+  padding-bottom: 30px;
+
+  @media (max-width: 800px) {
+    width: 340px;
+  }
+}
+
+.loginWrapper {
+  display: flex;
+  min-height: 100vh;
+  height: 897px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @media (max-width: 1080px) {
+    height: auto;
+  }
+
+  @media (max-width: 800px) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 600px) {
+    height: auto;
+    padding: 0;
+  }
+}
+
+.formBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+
+  @media (max-width: 600px) {
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 5px;
+  }
+}
+
+.goods {
+  font-family: "Butler";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  letter-spacing: -0.03em;
+  text-decoration-line: underline;
+  color: var(--LibertyMeets-Purple-500A);
+  mix-blend-mode: normal;
+  text-decoration-style: solid;
+}
+
+.usernameInput {
+  height: 38px;
+  border-color: #929292;
+
+  &:hover {
+    border-color: #921a64 !important;
+  }
+}
+
+.inputPassword {
+  height: 38px;
+  border-color: #929292;
+
+  &:hover {
+    border-color: #921a64 !important;
+  }
+}
+
+.password label {
+  font-size: 16px !important;
+  width: 190px !important;
+}
+
+.dontHave {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #929292;
+  text-decoration: none;
+}
+
+.signUp {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #333333;
+  text-decoration: none;
+  padding-top: 10px;
+
+  &:hover {
+    color: #921a64;
+  }
+}
+
+.username label {
+  font-size: 16px !important;
+}
+
+.username div div {
+  min-width: 90px !important;
+}
+
+.password div div {
+  min-width: 90px !important;
+}
+
+.box {
+  display: flex;
+  gap: 215px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+
+  @media (max-width: 800px) {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.logIn {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.checkboxRemember {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #921a64;
+  word-wrap: break-word;
+}
+
+.form {
+  min-width: 640px;
+
+  @media (max-width: 800px) {
+    min-width: auto;
+  }
+}
+
+.username .ant-form-item .ant-form-item-label > label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.forgot {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding-right: 5px;
+  color: #333333;
+
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
+
+  &:hover {
+    color: #921a64;
+  }
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container .checkHighload {
+  display: none;
+}
+
+.highload2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 19px;
+  width: 19px;
+  background-color: #ffffff;
+  border: 1px solid #921a64;
+  border-radius: 2px;
+  padding: 1px;
+}
+
+.container .checkHighload:checked ~ .highload2 {
+  background-color: #ffffff;
+}
+
+.highload2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container .checkHighload:checked ~ .highload2:after {
+  display: block;
+}
+
+.container .highload2:after {
+  left: 8px;
+  top: 0;
+  width: 5px;
+  height: 16px;
+  border: solid #921a64;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkboxText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #921a64;
+
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
+}
+
+.buttonLogIns {
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  background: #921a64;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  &:hover {
+    background: #640674 !important;
+  }
+}
+
+.buttonLogInsText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.username {
+  margin-bottom: 30px;
+}

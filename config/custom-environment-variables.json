@@ -1,0 +1,28 @@
+{
+  "appUrl": "APP_URL",
+  "db": {
+    "type": "DB_TYPE",
+    "host": "DB_HOST",
+    "port": "DB_POST",
+    "username": "DB_USER",
+    "password": "DB_PASS",
+    "database": "DB_NAME"
+  },
+  "secretKey": "NEXTAUTH_SECRET",
+  "recaptcha": {
+    "public_recaptcha_key": "RECAPTCHA_PUB_KEY",
+    "recaptcha_key": "RECAPTCHA_PRI_KEY"
+  },
+  "logging": {
+    "levels": {
+      "*": "LOGGING_LEVEL_DEFAULT",
+      "api": "LOGGING_LEVEL_API",
+      "db": "LOGGING_LEVEL_DB"
+    }
+  },
+  "mailgun": {
+    "apiKey": "MAILGUN_API_KEY",
+    "domain": "MAILGUN_DOMAIN",
+    "host": "MAILGUN_HOST"
+  }
+}

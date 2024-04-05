@@ -1,0 +1,298 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px 48px;
+  gap: 20px;
+  background: var(--LibertyMeets-Purple-100);
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
+  min-height: 90px;
+
+  @media (max-width: 1150px) {
+    padding: 25px 20px;
+    flex-direction: column;
+  }
+
+  @media (max-width: 1150px) {
+    padding: 25px 10px;
+  }
+
+  // Buttons
+  & .search {
+    @media (max-width: 1150px) {
+      background: none;
+      box-shadow: none;
+      justify-content: center;
+      width: auto;
+
+      &:hover {
+        color: #921a64 !important;
+        background: none;
+      }
+    }
+
+    .searchText {
+      @media (max-width: 1150px) {
+        color: #333333;
+        font-weight: 700;
+
+        &:hover {
+          color: #921a64;
+        }
+      }
+    }
+
+    .search img {
+      @media (max-width: 1150px) {
+        display: none;
+      }
+    }
+  }
+
+  & .signUp {
+    @media (max-width: 1150px) {
+      background: none;
+      box-shadow: none !important;
+      justify-content: center;
+
+      &:hover {
+        background: none;
+      }
+    }
+    .signUpImage {
+      @media (max-width: 1150px) {
+        display: none;
+      }
+    }
+    .signUpText {
+      @media (max-width: 1150px) {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #333333;
+
+        &:hover {
+          color: #921a64;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.myProfile {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  height: 40px;
+  color: #333333;
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    color: #921a64 !important;
+  }
+}
+
+.logOut {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  height: 40px;
+  color: #333333;
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    color: #921a64 !important;
+  }
+}
+
+.createPosts {
+  padding: 8px 18px;
+  gap: 10px;
+  background: #921a64;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none !important;
+  transition: 0.5s;
+  white-space: nowrap;
+
+  &:hover {
+    transition: 0.5s;
+    background: #640674;
+  }
+
+  @media (max-width: 1150px) {
+    background: none;
+    color: #333333;
+    box-shadow: none;
+    justify-content: center;
+    width: auto;
+
+    &:hover {
+      color: #921a64 !important;
+      background: none;
+    }
+  }
+}
+
+.createPosts img {
+  @media (max-width: 1150px) {
+    display: none;
+  }
+}
+
+.createPostsText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  @media (max-width: 1150px) {
+    color: #333333;
+    font-weight: 700;
+
+    &:hover {
+      color: #921a64 !important;
+    }
+  }
+}
+
+.navigationItemLink {
+  text-decoration: none;
+}
+
+.navigationItem {
+  list-style-type: none;
+}
+
+.navigationItemContainer {
+  display: flex;
+  padding: 0;
+  gap: 25px;
+  margin: 0;
+
+  @media (max-width: 1150px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.search {
+  background: #921a64;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 18px;
+  gap: 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+  border: none !important;
+  white-space: nowrap;
+
+  &:hover {
+    transition: 0.5s;
+    background: #640674;
+    border: none !important;
+  }
+}
+
+.searchText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.signUp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 137px;
+  height: 40px;
+  background: #921a64;
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: 0.5s;
+  border: none !important;
+
+  &:hover {
+    transition: 0.5s;
+    background: #640674;
+  }
+}
+
+.signUpText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+
+  /**/
+}
+
+.logIn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  height: 40px;
+  color: #333333;
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    color: #921a64 !important;
+  }
+}
+
+.navigation {
+  @media (max-width: 1150px) {
+    display: none;
+  }
+}
+
+.visible {
+  display: flex;
+  z-index: 99;
+}
+
+.burgerButton {
+  display: none;
+
+  @media (max-width: 1150px) {
+    display: block;
+  }
+}

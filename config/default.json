@@ -1,0 +1,59 @@
+{
+  "appUrl": "http://localhost:3000",
+  "db": {
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "",
+    "database": "liberty"
+  },
+  "secretKey": "test",
+  "token": {
+    "sessionLifetimeSec": 864000,
+    "sessionExtendedLifetimeSec": 86400000
+  },
+  "hash": {
+    "saltLength": 10
+  },
+  "posts": {
+    "perPage": 10
+  },
+  "recaptcha": {
+    "public_recaptcha_key": "",
+    "recaptcha_key": ""
+  },
+  "emails": {
+    "supportEmail": "support@libertymeets.com",
+    "templatesDir": "/emails",
+    "replySetup": {
+      "baseDomain": "mg.example.com"
+    },
+    "emailProps": {
+      "from": {
+        "name": "LibertyMeets service",
+        "email": "service@mg.example.com"
+      },
+      "cc": [],
+      "bcc": [],
+      "reply_to": {
+        "name": "LibertyMeets service",
+        "email": "service@mg.example.com"
+      }
+    }
+  },
+  "logging": {
+    "levels": {
+      "*": "silent",
+      "api": "debug",
+      "db": "debug"
+    }
+  },
+  "mailgun": {
+    "apiKey": "",
+    "domain": "",
+    "host": "",
+    "recipients": [],
+    "noReplyMail": ""
+  }
+}

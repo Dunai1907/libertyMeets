@@ -1,0 +1,36 @@
+{
+  "appUrl": "http://localhost:3000",
+  "db": {
+    "password": "linux"
+  },
+  "posts": {
+    "perPage": 5
+  },
+  "recaptcha": {
+    "public_recaptcha_key":"6LeAP_8jAAAAAHdN2O95MOJDmCGK8ELnuUFIYiJr",
+    "recaptcha_key":"6LeAP_8jAAAAANXs22gsoljyugQzt3miKWFoaR3r"
+  },
+
+  "emails": {
+    "templatesDir": "/emails",
+    "replySetup": {
+      "baseDomain": "mg.example.com"
+    },
+    "emailProps": {
+      "from": {
+        "name": "LibertyMeets service",
+        "email": "service@mg.twelvedevs.com"
+      },
+      "cc": [],
+      "bcc": [],
+      "reply_to": "reply-service@mg.twelvedevs.com"
+    }
+  },
+  "mailgun": {
+    "apiKey": "xxx-3537cafe2c06686ec87f3d44129fa283-9a235412-ce3cf1d6",
+    "domain": "mg.twelvedevs.com",
+    "host": "api.eu.mailgun.net",
+    "recipients": ["andrey@12devs.com"],
+    "noReplyMail": "no-reply@12devs.com"
+  }
+}

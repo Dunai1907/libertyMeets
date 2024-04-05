@@ -1,0 +1,169 @@
+.mi {
+  padding: 4px;
+  gap: 4px;
+  width: 90px !important;
+  height: 38px;
+  border: 1px solid #8f8f8f;
+  border-radius: 4px;
+
+  & span {
+    font-family: "Inter" !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 30px !important;
+  }
+  & input {
+    font-family: "Inter" !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 30px !important;
+  }
+  & div {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  &:hover {
+    border-color: #921a64 !important;
+  }
+}
+
+.loc {
+  padding: 4px;
+  gap: 4px;
+  width: 90px;
+  height: 38px;
+  border: 1px solid #8f8f8f;
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #8f8f8f;
+
+  &:hover {
+    border-color: #921a64 !important;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.location {
+  display: flex;
+  gap: 20px;
+}
+
+.radius {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+.button {
+  color: #8f8f8f;
+  background: unset;
+
+  @media (max-width: 1200px) {
+    font-size: 16px;
+    padding: 5px 18px;
+  }
+
+  &:hover {
+    color: #921a64 !important;
+    background: #eee9f7 !important;
+    border-color: unset !important;
+  }
+
+  @media (max-width: 600px) {
+    &:hover {
+      background: none !important;
+    }
+  }
+}
+
+.activeButton {
+  color: #921a64 !important;
+  background: #eee9f7 !important;
+
+  @media (max-width: 600px) {
+    background: none !important;
+  }
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+
+  & > button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    border-radius: 4px;
+    border: none;
+
+    box-shadow: none;
+    border-color: unset !important;
+
+    width: auto;
+    height: auto;
+
+    padding: 0px;
+
+    & > span {
+      line-height: 24px;
+      padding: 8px 36px;
+      display: block;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (max-width: 700px) {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

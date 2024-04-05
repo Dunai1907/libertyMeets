@@ -1,0 +1,286 @@
+.logoImage {
+  width: 426px;
+  height: 75px;
+
+  @media (max-width: 800px) {
+    width: 320px;
+  }
+}
+
+.registarationWrapper {
+  display: flex;
+  min-height: 100vh;
+  height: 897px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @media (max-width: 1080px) {
+    height: auto;
+  }
+
+  @media (max-width: 800px) {
+    padding: 30px 0;
+  }
+
+  @media (max-width: 575px) {
+    height: auto;
+    padding: 0;
+  }
+}
+
+.formBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+
+  @media (max-width: 575px) {
+    padding: 0;
+  }
+}
+
+.email {
+  margin-bottom: 30px;
+
+  & label {
+    font-size: 16px !important;
+  }
+
+  & div div {
+    min-width: 90px !important;
+  }
+}
+
+.password {
+  margin-bottom: 30px;
+
+  & label {
+    font-size: 16px !important;
+  }
+
+  & div div {
+    min-width: 90px !important;
+  }
+}
+
+.logo {
+  font-family: "Butler";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 100%;
+  display: flex;
+  padding-bottom: 30px;
+  align-items: flex-end;
+  letter-spacing: -0.03em;
+  text-decoration-line: underline;
+  color: var(--LibertyMeets-Purple-500A);
+  mix-blend-mode: normal;
+  text-decoration-style: solid;
+}
+
+.inputEmail {
+  height: 38px;
+  min-width: 339px;
+  transition: 0.5s;
+  width: auto;
+
+  &:hover {
+    transition: 0.5s;
+    border-color: #921a64 !important;
+  }
+}
+
+.inputPassword {
+  height: 38px;
+  min-width: 339px;
+  transition: 0.5s;
+  width: auto;
+
+  &:hover {
+    transition: 0.5s;
+    border-color: #921a64 !important;
+  }
+}
+
+.dontHave {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #929292;
+}
+
+.signUp {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #333333;
+  text-decoration: none;
+}
+
+.checkboxBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.checkbox {
+  min-height: 32px;
+}
+
+.signUp {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.capchaBlock {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 50px;
+
+  @media (max-width: 575px) {
+    margin: 0;
+  }
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  padding-top: 0;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 70px;
+  margin-bottom: 0;
+
+  @media (max-width: 575px) {
+    margin: 0;
+  }
+}
+
+.container .checkHighload {
+  display: none;
+}
+
+.highload2 {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 1px solid #921a64;
+  border-radius: 4px;
+}
+
+.container .checkHighload:checked ~ .highload2 {
+  background-color: #ffffff;
+}
+
+.highload2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container .checkHighload:checked ~ .highload2:after {
+  display: block;
+}
+
+.container .highload2:after {
+  left: 8px;
+  top: 0;
+  width: 8px;
+  height: 18px;
+  border: solid #921a64;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkboxText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+  padding-left: 18px;
+}
+
+.checkboxTerms {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #921a64;
+}
+
+.buttonSignUp {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  width: 137px;
+  height: 40px;
+  background: #921a64;
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: #640674 !important;
+  }
+}
+
+.link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #333333;
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    color: #921a64;
+  }
+}
+
+.termsLink {
+  color: #921a64;
+}
+
+.form {
+  min-width: 440px;
+  max-width: min-content;
+
+  @media (max-width: 575px) {
+    max-width: auto;
+    min-width: auto;
+  }
+}

@@ -1,0 +1,420 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.backButtonText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+
+  @media (max-width: 600px) {
+    display: none !important;
+  }
+}
+
+.blockedTitle {
+  font-family: "Butler";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #ff8b00;
+
+  @media (max-width: 700px) {
+    font-size: 34px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
+.blockedWrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 0 40px 0;
+  background: #fffae6;
+  border-top: 8px solid #ff8b00;
+  border-radius: 8px;
+}
+
+.backBlock {
+  height: 60px;
+
+  margin: 20px 0 0 50px;
+
+  @media (max-width: 1300px) {
+    margin: 10px 0 0 10px;
+  }
+}
+
+.backButton {
+  display: flex;
+  gap: 10px;
+  height: 52px;
+
+  @media (max-width: 1300px) {
+    align-items: center;
+    padding: 0 !important;
+  }
+}
+
+.backImage {
+  @media (max-width: 600px) {
+    width: 35px;
+  }
+}
+
+.myPostContainer {
+  position: relative;
+
+  background-color: #fff;
+  margin: 120px auto 40px auto;
+  max-width: 1072px;
+  padding: 50px 30px 55px 30px;
+  gap: 30px;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+
+  @media (max-width: 1300px) {
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0px 20px 40px 20px;
+  }
+
+  @media (max-width: 600px) {
+    gap: 15px;
+    padding: 20px 10px 55px 10px;
+    margin: 0px 10px 40px 10px;
+  }
+}
+
+.titleBlock {
+  width: 600px;
+
+  @media (max-width: 650px) {
+    width: -webkit-fill-available;
+  }
+
+  @media (max-width: 400px) {
+    width: 250px;
+  }
+}
+
+.titleText {
+  font-family: "Butler";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  color: #000000;
+  word-wrap: break-word;
+  max-width: 90%;
+
+  @media (max-width: 650px) {
+    margin-top: 40px;
+    font-size: 36px;
+  }
+}
+
+.categoryButton {
+  padding: 8px 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #921a64;
+  border-radius: 4px;
+  width: min-content;
+
+  @media (max-width: 600px) {
+    width: min-content;
+    height: min-content;
+    padding: 3px 20px;
+  }
+}
+
+.categoryButtonText {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  @media (max-width: 600px) {
+    font-size: 17px;
+  }
+}
+
+.categoryBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.category {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0d0d0c;
+}
+
+.postContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
+}
+
+.descriptionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.descriptionText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  width: 90%;
+  word-wrap: break-word;
+  text-align: justify;
+  margin-bottom: 0 !important;
+}
+
+.publicity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.currently {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #8f8f8f;
+
+  &:hover {
+    color: #d9041e;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.currentlyActive {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #8f8f8f;
+
+  &:hover {
+    color: #921a64;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.public {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.0151px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #d9041e;
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.publicityImage {
+  cursor: pointer;
+}
+
+.publicActive {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.0151px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #921a64;
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.location {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0d0d0c;
+}
+
+.question {
+  @media (max-width: 600px) {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.cardBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 300px;
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+
+  & > div {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  @media (max-width: 1080px) {
+    gap: 10px;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.star {
+  margin-top: 10px;
+
+  & > div {
+    cursor: pointer;
+  }
+}
+
+.topBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-right: 50px;
+  .categoryBlock,
+  .select,
+  .right {
+    flex: 1;
+  }
+}
+
+.select {
+  position: absolute;
+  right: 0px;
+  background: url("./../../../public/decor/EditDots.svg");
+  background-repeat: no-repeat;
+
+  & div span {
+    font-family: "Inter" !important;
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 30px;
+    color: #8f8f8f;
+    padding-left: 8px !important;
+    box-sizing: border-box;
+
+    @media (max-width: 600px) {
+      font-size: 17px !important;
+    }
+  }
+}
+
+.modalImages {
+  display: flex;
+  justify-content: center;
+  gap: 66px;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 60px 20px 60px;
+  gap: 20px;
+}
+
+.modalTitle {
+  font-family: "Butler";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #471b51;
+}
+
+.modalText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #471b51;
+}
+
+.option {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8f8f8f;
+
+  &:hover {
+    color: #921a64 !important;
+  }
+}
+
+.optionContainer {
+  &:hover {
+    background-color: #efeff4 !important;
+  }
+}

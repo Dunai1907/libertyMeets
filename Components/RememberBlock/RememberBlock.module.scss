@@ -1,0 +1,37 @@
+.rememberWrapper {
+  max-width: 840px;
+  height: auto;
+  background: #fffae6;
+  border-top: 8px solid #ff8b00;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-family: 'Butler';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #ff8b00;
+}
+
+.description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  width: 75%;
+}
+
+.rememberImage {
+  padding-top: 50px;
+}

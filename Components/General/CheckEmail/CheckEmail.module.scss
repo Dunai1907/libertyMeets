@@ -1,0 +1,28 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #FFFAE6;
+
+    @media (max-width:800px) {
+        padding: 50px 0;
+    }
+}
+
+.message{
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    color: #921A64;
+    width: 40%;
+    text-align: center;
+
+    @media (max-width:800px) {
+        width: 80%;
+        font-size: 30px;
+    }
+}
